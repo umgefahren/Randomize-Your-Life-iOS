@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Randomize_Your_LifeApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -13,6 +13,14 @@
 		0718A1E1285F247F00C9051D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718A1CF285F247B00C9051D /* ContentView.swift */; };
 		0718A1E2285F247F00C9051D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0718A1D0285F247E00C9051D /* Assets.xcassets */; };
 		0718A1E3285F247F00C9051D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0718A1D0285F247E00C9051D /* Assets.xcassets */; };
+		0718A1ED285F270F00C9051D /* CategorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718A1EC285F270F00C9051D /* CategorySelector.swift */; };
+		0718A1EE285F270F00C9051D /* CategorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718A1EC285F270F00C9051D /* CategorySelector.swift */; };
+		0718A1F0285F33D900C9051D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718A1EF285F33D800C9051D /* SettingsView.swift */; };
+		0718A1F1285F33D900C9051D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718A1EF285F33D800C9051D /* SettingsView.swift */; };
+		07706D80285F556200D6A5B4 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D7F285F556200D6A5B4 /* TargetView.swift */; };
+		07706D81285F556200D6A5B4 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D7F285F556200D6A5B4 /* TargetView.swift */; };
+		07706D83285F55C400D6A5B4 /* TargetSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D82285F55C400D6A5B4 /* TargetSelector.swift */; };
+		07706D84285F55C400D6A5B4 /* TargetSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D82285F55C400D6A5B4 /* TargetSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,12 @@
 		0718A1D5285F247F00C9051D /* Randomize Your Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Randomize Your Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0718A1DB285F247F00C9051D /* Randomize Your Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Randomize Your Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0718A1DD285F247F00C9051D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		0718A1EC285F270F00C9051D /* CategorySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelector.swift; sourceTree = "<group>"; };
+		0718A1EF285F33D800C9051D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0718A1F3285F3D7B00C9051D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		0718A1F5285F3D8200C9051D /* Randomize-Your-Life--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Randomize-Your-Life--iOS--Info.plist"; sourceTree = "<group>"; };
+		07706D7F285F556200D6A5B4 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		07706D82285F55C400D6A5B4 /* TargetSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +59,12 @@
 		0718A1C8285F247A00C9051D = {
 			isa = PBXGroup;
 			children = (
+				0718A1F5285F3D8200C9051D /* Randomize-Your-Life--iOS--Info.plist */,
 				0718A1CD285F247B00C9051D /* Shared */,
 				0718A1DC285F247F00C9051D /* macOS */,
 				0718A1D6285F247F00C9051D /* Products */,
+				0718A1F2285F3D7B00C9051D /* Frameworks */,
+				80E6FE3A86141430F27E4FBD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,10 @@
 			children = (
 				0718A1CE285F247B00C9051D /* Randomize_Your_LifeApp.swift */,
 				0718A1CF285F247B00C9051D /* ContentView.swift */,
+				0718A1EC285F270F00C9051D /* CategorySelector.swift */,
+				0718A1EF285F33D800C9051D /* SettingsView.swift */,
+				07706D7F285F556200D6A5B4 /* TargetView.swift */,
+				07706D82285F55C400D6A5B4 /* TargetSelector.swift */,
 				0718A1D0285F247E00C9051D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +97,21 @@
 				0718A1DD285F247F00C9051D /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		0718A1F2285F3D7B00C9051D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0718A1F3285F3D7B00C9051D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E6FE3A86141430F27E4FBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0718A1ED285F270F00C9051D /* CategorySelector.swift in Sources */,
+				0718A1F0285F33D900C9051D /* SettingsView.swift in Sources */,
 				0718A1E0285F247F00C9051D /* ContentView.swift in Sources */,
 				0718A1DE285F247F00C9051D /* Randomize_Your_LifeApp.swift in Sources */,
+				07706D80285F556200D6A5B4 /* TargetView.swift in Sources */,
+				07706D83285F55C400D6A5B4 /* TargetSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0718A1EE285F270F00C9051D /* CategorySelector.swift in Sources */,
+				0718A1F1285F33D900C9051D /* SettingsView.swift in Sources */,
 				0718A1E1285F247F00C9051D /* ContentView.swift in Sources */,
 				0718A1DF285F247F00C9051D /* Randomize_Your_LifeApp.swift in Sources */,
+				07706D81285F556200D6A5B4 /* TargetView.swift in Sources */,
+				07706D84285F55C400D6A5B4 /* TargetSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +353,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6TD9AGF7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Randomize-Your-Life--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Random;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location to start out.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -338,11 +387,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6TD9AGF7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Randomize-Your-Life--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Random;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location to start out.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -372,6 +426,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,6 +453,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
