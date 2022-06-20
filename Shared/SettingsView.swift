@@ -67,6 +67,7 @@ struct SettingsView: View {
                     VStack {
                         Text("Radius: \(Int(radius))km")
                         Slider(value: $radius, in: 0...10)
+                            .padding()
                         
                         Picker("Transport", selection: $transportType) {
                             ForEach(TransportType.allCases) { t in

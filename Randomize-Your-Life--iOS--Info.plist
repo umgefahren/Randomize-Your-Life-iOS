@@ -13,6 +13,11 @@
 			</array>
 		</dict>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>uber</string>
+		<string>uberauth</string>
+	</array>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModeBike</string>
@@ -28,5 +33,9 @@
 		<string>MKDirectionsModeTaxi</string>
 		<string>MKDirectionsModeTrain</string>
 	</array>
+	<key>UberClientID</key>
+	<string>M3C52MTUKDu57STPmersnHUOc6mUn6Mx</string>
+	<key>UberDisplayName</key>
+	<string>Randomize your Life</string>
 </dict>
 </plist>

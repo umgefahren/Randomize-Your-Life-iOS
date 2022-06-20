@@ -21,6 +21,8 @@
 		07706D81285F556200D6A5B4 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D7F285F556200D6A5B4 /* TargetView.swift */; };
 		07706D83285F55C400D6A5B4 /* TargetSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D82285F55C400D6A5B4 /* TargetSelector.swift */; };
 		07706D84285F55C400D6A5B4 /* TargetSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07706D82285F55C400D6A5B4 /* TargetSelector.swift */; };
+		509BCD5DED7D05C3567B7777 /* Pods_Randomize_Your_Life__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FF2B04CFFD63BA8F426D65 /* Pods_Randomize_Your_Life__macOS_.framework */; };
+		BB123C08064EB7AB5DF9A7FC /* Pods_Randomize_Your_Life__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07400C67E0762E0A3D3A16D1 /* Pods_Randomize_Your_Life__iOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,14 @@
 		0718A1EF285F33D800C9051D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0718A1F3285F3D7B00C9051D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		0718A1F5285F3D8200C9051D /* Randomize-Your-Life--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Randomize-Your-Life--iOS--Info.plist"; sourceTree = "<group>"; };
+		07400C67E0762E0A3D3A16D1 /* Pods_Randomize_Your_Life__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Randomize_Your_Life__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07706D7F285F556200D6A5B4 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 		07706D82285F55C400D6A5B4 /* TargetSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSelector.swift; sourceTree = "<group>"; };
+		554C0ACBC87D999203E44D7F /* Pods-Randomize Your Life (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomize Your Life (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Randomize Your Life (iOS)/Pods-Randomize Your Life (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		5FEE07117831962F567AFF63 /* Pods-Randomize Your Life (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomize Your Life (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Randomize Your Life (macOS)/Pods-Randomize Your Life (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		7B699D55025C7705CAA41350 /* Pods-Randomize Your Life (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomize Your Life (iOS).release.xcconfig"; path = "Target Support Files/Pods-Randomize Your Life (iOS)/Pods-Randomize Your Life (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		9CC86944746BE3B6A7CCC134 /* Pods-Randomize Your Life (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomize Your Life (macOS).release.xcconfig"; path = "Target Support Files/Pods-Randomize Your Life (macOS)/Pods-Randomize Your Life (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		E5FF2B04CFFD63BA8F426D65 /* Pods_Randomize_Your_Life__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Randomize_Your_Life__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB123C08064EB7AB5DF9A7FC /* Pods_Randomize_Your_Life__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509BCD5DED7D05C3567B7777 /* Pods_Randomize_Your_Life__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				0718A1F3285F3D7B00C9051D /* MapKit.framework */,
+				07400C67E0762E0A3D3A16D1 /* Pods_Randomize_Your_Life__iOS_.framework */,
+				E5FF2B04CFFD63BA8F426D65 /* Pods_Randomize_Your_Life__macOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +122,10 @@
 		80E6FE3A86141430F27E4FBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				554C0ACBC87D999203E44D7F /* Pods-Randomize Your Life (iOS).debug.xcconfig */,
+				7B699D55025C7705CAA41350 /* Pods-Randomize Your Life (iOS).release.xcconfig */,
+				5FEE07117831962F567AFF63 /* Pods-Randomize Your Life (macOS).debug.xcconfig */,
+				9CC86944746BE3B6A7CCC134 /* Pods-Randomize Your Life (macOS).release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -121,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0718A1E6285F247F00C9051D /* Build configuration list for PBXNativeTarget "Randomize Your Life (iOS)" */;
 			buildPhases = (
+				773E501D0E755C859EC5906E /* [CP] Check Pods Manifest.lock */,
 				0718A1D1285F247F00C9051D /* Sources */,
 				0718A1D2285F247F00C9051D /* Frameworks */,
 				0718A1D3285F247F00C9051D /* Resources */,
+				3EBFC580D11CCDEE240E77AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0718A1E9285F247F00C9051D /* Build configuration list for PBXNativeTarget "Randomize Your Life (macOS)" */;
 			buildPhases = (
+				F1947485C23BFC90ADA289BC /* [CP] Check Pods Manifest.lock */,
 				0718A1D7285F247F00C9051D /* Sources */,
 				0718A1D8285F247F00C9051D /* Frameworks */,
 				0718A1D9285F247F00C9051D /* Resources */,
@@ -206,6 +225,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EBFC580D11CCDEE240E77AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Randomize Your Life (iOS)/Pods-Randomize Your Life (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Randomize Your Life (iOS)/Pods-Randomize Your Life (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Randomize Your Life (iOS)/Pods-Randomize Your Life (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		773E501D0E755C859EC5906E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Randomize Your Life (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1947485C23BFC90ADA289BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Randomize Your Life (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0718A1D1285F247F00C9051D /* Sources */ = {
@@ -348,6 +431,7 @@
 		};
 		0718A1E7285F247F00C9051D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554C0ACBC87D999203E44D7F /* Pods-Randomize Your Life (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,7 +446,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -382,6 +466,7 @@
 		};
 		0718A1E8285F247F00C9051D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B699D55025C7705CAA41350 /* Pods-Randomize Your Life (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,7 +481,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -417,6 +502,7 @@
 		};
 		0718A1EA285F247F00C9051D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FEE07117831962F567AFF63 /* Pods-Randomize Your Life (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +530,7 @@
 		};
 		0718A1EB285F247F00C9051D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC86944746BE3B6A7CCC134 /* Pods-Randomize Your Life (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

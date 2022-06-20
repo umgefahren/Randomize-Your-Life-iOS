@@ -11,8 +11,9 @@ import CoreLocation
 
 private func fetchItems(radius: Double, categories: [MKPointOfInterestCategory], region: MKCoordinateRegion) async throws -> [MKMapItem] {
     let filter = MKPointOfInterestFilter.init(including: categories)
-    let request = MKLocalPointsOfInterestRequest.init(center:  region.center, radius: radius * 1000)
+    let request = MKLocalPointsOfInterestRequest.init(center: region.center, radius: radius * 1000)
     request.pointOfInterestFilter = filter
+    print("Max Distance => \(MKLocalPointsOfInterestRequest.maxRadius)")
     
     let search = MKLocalSearch.init(request: request)
     let result = try await search.start()
@@ -21,6 +22,7 @@ private func fetchItems(radius: Double, categories: [MKPointOfInterestCategory],
 
 func fetchRandomTarget(radius: Double, categories: [MKPointOfInterestCategory], region: MKCoordinateRegion) async throws -> MKMapItem? {
     let choices = try await fetchItems(radius: radius, categories: categories, region: region)
+    print("Choices Length => \(choices.count)")
     return choices.randomElement()
 }
 

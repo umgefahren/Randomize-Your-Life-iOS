@@ -34,7 +34,25 @@ struct SelectorPreview: Hashable {
         .laundry,
         .library,
         .marina,
-        .movieTheatre
+        .movieTheatre,
+        .museum,
+        .nationalPark,
+        .nightlife,
+        .park,
+        .parking,
+        .pharmacy,
+        .police,
+        .postOffice,
+        .publicTransport,
+        .restaurant,
+        .restroom,
+        .school,
+        .stadium,
+        .store,
+        .theatre,
+        .university,
+        .winery,
+        .zoo
     ]
     
     init(name: String, category: MKPointOfInterestCategory) {
@@ -64,14 +82,31 @@ struct SelectorPreview: Hashable {
     static let library = Self.init(name: "Library", category: MKPointOfInterestCategory.library)
     static let marina = Self.init(name: "Marina", category: MKPointOfInterestCategory.marina)
     static let movieTheatre = Self.init(name: "Movie Theatre", category: MKPointOfInterestCategory.movieTheater)
-    // more are missing
+    static let museum = Self.init(name: "Museum", category: MKPointOfInterestCategory.museum)
+    static let nationalPark = Self.init(name: "National Park", category: MKPointOfInterestCategory.nationalPark)
+    static let nightlife = Self.init(name: "Nightlife", category: MKPointOfInterestCategory.nightlife)
+    static let park = Self.init(name: "Park", category: MKPointOfInterestCategory.park)
+    static let parking = Self.init(name: "Parking", category: MKPointOfInterestCategory.parking)
+    static let pharmacy = Self.init(name: "Pharmacy", category: MKPointOfInterestCategory.pharmacy)
+    static let police = Self.init(name: "Police", category: MKPointOfInterestCategory.police)
+    static let postOffice = Self.init(name: "Post Office", category: MKPointOfInterestCategory.postOffice)
+    static let publicTransport = Self.init(name: "Public Transport", category: MKPointOfInterestCategory.publicTransport)
+    static let restaurant = Self.init(name: "Restaurant", category: MKPointOfInterestCategory.restaurant)
+    static let restroom = Self.init(name: "Restroom", category: MKPointOfInterestCategory.restroom)
+    static let school = Self.init(name: "School", category: MKPointOfInterestCategory.school)
+    static let stadium = Self.init(name: "Stadium", category: MKPointOfInterestCategory.stadium)
+    static let store = Self.init(name: "Store", category: MKPointOfInterestCategory.store)
+    static let theatre = Self.init(name: "Theatre", category: MKPointOfInterestCategory.theater)
+    static let university = Self.init(name: "University", category: MKPointOfInterestCategory.university)
+    static let winery = Self.init(name: "Winery", category: MKPointOfInterestCategory.winery)
+    static let zoo = Self.init(name: "Zoo", category: MKPointOfInterestCategory.zoo)
 }
 
 struct MultipleSelectionRow: View {
     var title: String
     var isSelected: Bool
     var action: () -> Void
-
+    
     var body: some View {
         Button(action: self.action) {
             HStack {
@@ -103,7 +138,7 @@ struct CategorySelector: View {
                 }
             }
         }.navigationTitle("Select Category")
-
+        
     }
 }
 

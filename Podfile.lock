@@ -1,24 +1,20 @@
 PODS:
-  - Sentry (7.17.0):
-    - Sentry/Core (= 7.17.0)
-  - Sentry/Core (7.17.0)
+  - UberCore (0.13.0)
+  - UberRides (0.13.0):
+    - UberCore
 
 DEPENDENCIES:
-  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `7.17.0`)
+  - UberRides (~> 0.9)
 
-EXTERNAL SOURCES:
-  Sentry:
-    :git: https://github.com/getsentry/sentry-cocoa.git
-    :tag: 7.17.0
-
-CHECKOUT OPTIONS:
-  Sentry:
-    :git: https://github.com/getsentry/sentry-cocoa.git
-    :tag: 7.17.0
+SPEC REPOS:
+  trunk:
+    - UberCore
+    - UberRides
 
 SPEC CHECKSUMS:
-  Sentry: fab42835ed4562f0ea425b1a9814a24cc034b5d1
+  UberCore: 27cd75eff06f70c57897fa3dcec1eb015a8c24ad
+  UberRides: 6344d67ed1547b6b66c88f5c15dd659d9028217d
 
-PODFILE CHECKSUM: 1890207b57b90de819725861ddec296e431c8ce7
+PODFILE CHECKSUM: 1395f78709c77f79e9811002ea8cdfab3c937a39
 
 COCOAPODS: 1.11.2
